@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>لوحة إدارة شُرفة</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body class="admin">
+<a class="skip-link" href="#main-content">تخطَّ إلى المحتوى</a>
+<header class="admin-topbar">
+<button class="btn btn-quiet btn-icon nav-toggle" type="button" id="nav-toggle" aria-controls="side-nav" aria-expanded="false" aria-label="فتح القائمة">
+<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><polygon points="4,6 20,6 20,8 4,8" fill="currentColor"></polygon><polygon points="4,11 20,11 20,13 4,13" fill="currentColor"></polygon><polygon points="4,16 20,16 20,18 4,18" fill="currentColor"></polygon></svg>
+</button>
+<p class="admin-brand">لوحة إدارة شُرفة</p>
+<div class="admin-user">
+<span id="user-name"></span>
+<span class="chip chip-sand" id="user-role"></span>
+<button class="btn btn-quiet btn-small" type="button" id="logout-btn">تسجيل الخروج</button>
+</div>
+</header>
+<div class="admin-shell">
+<aside class="admin-sidebar on-dark">
+<a class="admin-logo" href="#/overview" aria-label="شُرفة، النظرة العامة"><img src="/assets/images/logo/logo-horizontal-white.svg" alt="شُرفة" height="32"></a>
+<nav id="side-nav" class="side-nav" aria-label="وحدات اللوحة"></nav>
+<a class="admin-site-link" href="/" target="_blank" rel="noopener noreferrer">افتح الموقع</a>
+</aside>
+<main id="main-content" class="admin-main" tabindex="-1">
+<div id="app-messages" class="app-messages" aria-live="polite"></div>
+<div id="module-root"></div>
+</main>
+</div>
+<script type="module" src="/assets/js/admin/app.js"></script>
+</body>
+</html>

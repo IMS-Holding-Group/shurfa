@@ -1,0 +1,19 @@
+{
+  "name": "shurfah-website",
+  "private": true,
+  "description": "موقع شُرفة التعريفي التجاري مع نظام إدارة المحتوى",
+  "type": "module",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "scripts": {
+    "start": "node --env-file=.env server/index.js",
+    "dev": "node --watch --env-file=.env server/index.js",
+    "seed": "node --env-file=.env scripts/seed.js",
+    "seed:clear-demo": "node --env-file=.env scripts/seed.js --clear-demo",
+    "test": "node --test scripts/"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}

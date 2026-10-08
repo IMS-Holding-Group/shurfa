@@ -1,0 +1,144 @@
+/* ===== الخط ===== */
+@font-face {
+ font-family: "IBM Plex Sans Arabic";
+ font-style: normal;
+ font-weight: 300;
+ font-display: swap;
+ src: url("/assets/fonts/IBMPlexSansArabic-Light.ttf") format("truetype") }
+@font-face {
+ font-family: "IBM Plex Sans Arabic";
+ font-style: normal;
+ font-weight: 400;
+ font-display: swap;
+ src: url("/assets/fonts/IBMPlexSansArabic-Regular.ttf") format("truetype") }
+@font-face {
+ font-family: "IBM Plex Sans Arabic";
+ font-style: normal;
+ font-weight: 500;
+ font-display: swap;
+ src: url("/assets/fonts/IBMPlexSansArabic-Medium.ttf") format("truetype") }
+@font-face {
+ font-family: "IBM Plex Sans Arabic";
+ font-style: normal;
+ font-weight: 600;
+ font-display: swap;
+ src: url("/assets/fonts/IBMPlexSansArabic-SemiBold.ttf") format("truetype") }
+@font-face {
+ font-family: "IBM Plex Sans Arabic";
+ font-style: normal;
+ font-weight: 700;
+ font-display: swap;
+ src: url("/assets/fonts/IBMPlexSansArabic-Bold.ttf") format("truetype") }
+/* ===== إعادة الضبط ===== */
+*, *::before, *::after { box-sizing: border-box }
+* {
+ margin: 0;
+ padding: 0 }
+html {
+ font-size: 100%;
+ -webkit-text-size-adjust: 100%;
+ scroll-behavior: auto }
+body {
+ min-height: 100vh;
+ min-height: 100dvh;
+ font-family: var(--font-family);
+ font-size: var(--size-body);
+ font-weight: var(--font-weight-light);
+ line-height: var(--line-body);
+ color: var(--color-ink);
+ text-align: start;
+ background: var(--color-cream);
+ direction: rtl;
+ -webkit-font-smoothing: antialiased }
+img, svg, video, iframe {
+ display: block;
+ max-width: 100% }
+img { height: auto }
+ul, ol { list-style-position: inside }
+a {
+ color: var(--color-teal);
+ text-decoration: underline;
+ text-underline-offset: 0.2em;
+ transition: color var(--duration), background-color var(--duration), border-color var(--duration) }
+a:hover { color: var(--color-teal-dark) }
+button, input, select, textarea {
+ font: inherit;
+ color: inherit }
+button { cursor: pointer }
+:focus-visible {
+ outline: var(--focus-outline);
+ outline-offset: 2px }
+/* ===== الطباعة ===== */
+h1, h2, h3, h4 {
+ font-weight: var(--font-weight-semibold);
+ line-height: var(--line-h1);
+ overflow-wrap: break-word }
+h1 { font-size: var(--size-h1) }
+h2 { font-size: var(--size-h1) }
+h3 {
+ font-size: var(--size-h2);
+ font-weight: var(--font-weight-medium);
+ line-height: var(--line-h2) }
+h4 {
+ font-size: var(--size-lead);
+ font-weight: var(--font-weight-medium);
+ line-height: var(--line-h2) }
+p, li { max-width: var(--measure) }
+.display {
+ font-size: var(--size-display);
+ font-weight: var(--font-weight-bold);
+ line-height: var(--line-display) }
+.lead {
+ max-width: var(--measure);
+ font-size: var(--size-lead);
+ font-weight: var(--font-weight-medium);
+ line-height: var(--line-body) }
+.support {
+ font-size: var(--size-support);
+ font-weight: var(--font-weight-regular);
+ line-height: var(--line-support) }
+.muted { color: var(--color-text-muted) }
+.center { text-align: center }
+.visually-hidden {
+ position: absolute;
+ margin: -1px;
+ padding: 0;
+ border: 0;
+ width: 1px;
+ height: 1px;
+ overflow: hidden;
+ clip: rect(0 0 0 0);
+ white-space: nowrap }
+.skip-link {
+ position: absolute;
+ top: -100%;
+ inset-inline-start: var(--space-2);
+ padding: var(--space-1) var(--space-2);
+ border-radius: var(--radius);
+ color: var(--color-surface);
+ background: var(--color-ink);
+ z-index: 100 }
+.skip-link:focus { top: var(--space-2) }
+.prose h2 {
+ margin-top: var(--space-5);
+ margin-bottom: var(--space-2);
+ font-size: var(--size-h2);
+ font-weight: var(--font-weight-medium);
+ line-height: var(--line-h2) }
+.prose h2:first-child { margin-top: 0 }
+.prose h3 {
+ margin-top: var(--space-4);
+ margin-bottom: var(--space-2);
+ font-size: var(--size-lead) }
+.prose p, .prose ul, .prose ol { margin-bottom: var(--space-3) }
+.prose li { margin-bottom: var(--space-1) }
+.prose img {
+ margin: var(--space-3) 0;
+ border-radius: var(--radius) }
+.prose strong { font-weight: var(--font-weight-semibold) }
+.on-dark { color: var(--color-surface) }
+.on-dark a { color: var(--color-surface) }
+.on-dark a:hover { color: var(--color-sand) }
+.on-dark .muted { color: var(--color-sand) }
+@media (prefers-reduced-motion: reduce) {
+ *, *::before, *::after { transition: none !important } }

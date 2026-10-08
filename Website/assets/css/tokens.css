@@ -1,0 +1,71 @@
+/* ===== متغيرات الهوية ===== */
+:root {
+ --color-brick: #E4573D;
+ --color-teal: #2CA6A4;
+ --color-gold: #F5A623;
+ --color-purple: #7B5BA7;
+ --color-ink: #1A2E28;
+ --color-cream: #FAF6F0;
+ --color-sand: #E7E0D6;
+ --color-surface: #FFFFFF;
+ --color-text-muted: #5C6B66;
+ --color-success: #1F7F6E;
+ --color-error: #C43A22;
+ --color-gold-soft: #FDF0DA;
+ --color-purple-soft: #EDE7F4;
+ --color-brick-dark: #C9472F;
+ --color-teal-dark: #23908E;
+ --color-ink-soft: #24403A;
+ --color-overlay-15: rgba(255, 255, 255, 0.15);
+ --color-ink-15: rgba(26, 46, 40, 0.15);
+ --font-family: "IBM Plex Sans Arabic", Tahoma, Arial, sans-serif;
+ --font-weight-light: 300;
+ --font-weight-regular: 400;
+ --font-weight-medium: 500;
+ --font-weight-semibold: 600;
+ --font-weight-bold: 700;
+ --size-display: clamp(44px, 2.5rem + 3vw, 88px);
+ --size-h1: clamp(32px, 1.6rem + 1.2vw, 46px);
+ --size-h2: clamp(24px, 1.3rem + 0.6vw, 32px);
+ --size-lead: clamp(20px, 1.15rem + 0.3vw, 24px);
+ --size-body: clamp(18px, 1.05rem + 0.25vw, 22px);
+ --size-button: 20px;
+ --size-support: clamp(16px, 0.95rem + 0.1vw, 18px);
+ --size-min: 14px;
+ --line-display: 1.2;
+ --line-h1: 1.3;
+ --line-h2: 1.45;
+ --line-body: 1.85;
+ --line-support: 1.6;
+ --line-button: 1;
+ --space-1: 8px;
+ --space-2: 16px;
+ --space-3: 24px;
+ --space-4: 32px;
+ --space-5: 48px;
+ --space-6: 64px;
+ --space-7: 96px;
+ --radius: 14px;
+ --control-height: 56px;
+ --touch-min: 48px;
+ --border-field: 1.5px;
+ --border-strong: 2px;
+ --page-margin: 24px;
+ --grid-gap: 32px;
+ --measure: 62ch;
+ --content-max: 1240px;
+ --logo-height: 32px;
+ --icon-24: 24px;
+ --icon-32: 32px;
+ --icon-48: 48px;
+ --sidebar-width: 280px;
+ --duration: 150ms;
+ --focus-outline: var(--border-strong) solid var(--color-teal) }
+@media (min-width: 768px) {
+ :root {
+  --page-margin: 60px;
+  --logo-height: 32px } }
+@media (min-width: 1440px) {
+ :root {
+  --page-margin: 100px;
+  --logo-height: 40px } }
